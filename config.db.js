@@ -6,8 +6,8 @@ try {
 connection = mysql.createConnection({
 host: process.env.DBHOST,
 user: process.env.DBUSER,
-password: process.env.DBPASS,
-database: process.env.DBNAME,
+password: process.env.DBPASS_ROOT,
+database: process.env.DB_NAME,
 port: process.env.DBPORT
 });
 } catch (error) {

@@ -8,7 +8,10 @@ services:
     ports:
       - ${DBPORT}:3306
     environment:
-      - MYSQL_USER=${DBUSER}
       - MYSQL_PASSWORD=${DBPASS}
-      - MYSQL_DB=${DBNAME}
+      - MYSQL_DATABASE=${DB_NAME}
       - MYSQL_HOST=${DBHOST}
+      - MYSQL_ROOT_PASSWORD=${DBPASS_ROOT}
+
+
+
